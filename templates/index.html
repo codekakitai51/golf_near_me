@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>from python</title>
+  <script src="{{ url_for('static', filename='main.js') }}"></script>
+</head>
+<body>
+  <body>
+    <form method="POST">
+
+      <label for="dateSelect">Date:</label>
+      <select id="dateSelect" name="date" required>
+        <option value="" selected>select your date</option>
+      </select><br><br>
+      
+      <label for="timeSelect">Time:</label>
+      <select id="timeSelect" name="time" required>
+        <option value="" selected>select your time</option>
+      </select><br><br>
+      </select><br><br>
+      <input type="submit" value="Search">
+    </form>
+     
+    <div class="result">
+      <h2>selected day is: <span>{{dateForBellevue}}{{timeFromHtml}}</span></h2>
+      <a href="https://premier.cps.golf/Bellevuev3/(S(yjrsedugqisw1lyt5zs03cdr))/Home/WidgetView" target="_blank">
+        <h2>Bellevue Golf Corse</h2>
+      </a>
+      <h3>{{timeArrBellevue}}</h3>
+      <hr>
+      <a href="https://www.willowsrun.com/Book-a-Tee-Time" target="_blank">
+        <h2>Willows Golf Club</h2>
+      </a>
+      <h3>{{timeArrWillow}}</h3>
+    </div> 
+  </body>
+</body>
+</html>
