@@ -1,4 +1,4 @@
-# Python Web Scraping for available golf corses
+# Python Web Scraping for available golf corse tee times
 - Web scraping and retrieving available tee times from two my fav golf corses (Bellevue and Willow).
 
 ## Demo
